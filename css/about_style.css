@@ -19,6 +19,7 @@ header{
 header .btn_back i{
     font-size: 30px;
     color: #333;
+    cursor: pointer;
 }
 header .logo img{
     width: 120px;

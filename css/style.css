@@ -489,6 +489,9 @@ section#aboutme{
 .contact .text_area .contact_me li span{
     width: 70%;
 }
+.contact .text_area .contact_me li a{
+    width: 70%;
+}
 /* footer */
 footer{
     width: 100%;
