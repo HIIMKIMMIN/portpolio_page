@@ -1,0 +1,237 @@
+@charset "utf-8";
+
+.container{
+    background: #FEF9F3;
+}
+.inner{
+    width: 1200px;
+    margin: 0 auto;
+}
+/* header */
+header{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid #E2CCC7;
+    padding: 0 5%;
+}
+header .btn_back i{
+    font-size: 30px;
+    color: #333;
+}
+header .logo img{
+    width: 120px;
+    opacity: 0.9;
+}
+/* section-1 */
+.sec1{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+.sec1 .img_area{
+    width: 48.5%;
+}
+.sec1 .img_area .img_box{
+    width: 100%;
+    height: 500px;
+    background: #fff;
+}
+.sec1 .img_area .name{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+}
+.sec1 .img_area .name span{
+    font-size: 25px;
+    color: #5c5a547a;
+}
+.sec1 .info_area{
+    width: 46.5%;
+    font-size: 18px;
+    color: #333333d7;
+    line-height: 2;
+}
+.sec1 .info_area strong{
+    font-size: 25px;
+    font-weight: 700;
+    color: #333;
+    display: block;
+    margin-bottom: 20px;
+}
+.sec1 .info_area span{
+    font-size: 23px;
+    font-weight: 600;
+    color: #5c5a54;
+}
+/* section-2 */
+.sec2{
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 300px;
+    line-height: 2;
+    position: relative;
+}
+.sec2::before{
+    content: '';
+    position: absolute;
+    top: -180px; left: 50%;
+    transform: translateX(-50%);
+    width: 2px; height: 100px; 
+    background: #E2CCC7;
+}
+/* section-3 */
+.sec3{
+    margin-top: 200px;
+    padding-left: 100px;
+    position: relative;
+}
+.sec3::before{
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 5px; height: 100%; 
+    background: #E2CCC7;
+}
+.sec3 h2{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.majorCaree_list .period{
+    background: #fff;
+    border-radius: 20px;   
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    display: inline-block;
+    position: relative;
+    font-weight: 700;
+    font-size: 16px;
+}
+.majorCaree_list .period::before{
+    content: '';
+    position: absolute;
+    top: 50%; left: -50px;
+    transform: translateY(-50%);
+    width: 10px; height: 10px;
+    border: 2px solid #E2CCC7;
+    border-radius: 50%;
+}
+.majorCaree_list .main_text{
+    padding: 0 0 30px 50px;
+    border-bottom: 1px solid #333333d7;
+    font-weight: 600;
+}
+.majorCaree_list .education_area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 5%;
+    margin-bottom: 80px;
+    border-bottom: 1px solid #333333d7;
+}
+.majorCaree_list .education_area p{
+    font-weight: 600;
+    font-size: 18px;
+}
+.majorCaree_list .education_area .btn_more{
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background: #3333332f;
+    border-radius: 2px;
+    color: #333;
+}
+.majorCaree_list .education_area .btn_more:hover{
+    background: #333;
+    color: #fff;
+}
+.majorCaree_list .education_area .education_list{
+    width: 50%;
+}
+.majorCaree_list .education_area .education_list LI{
+    margin-bottom: 10px;
+    color: #333333c2;
+}
+/* section-4 */
+.sec4{
+    margin-top: 300px;
+}
+.sec4 h2{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 100px;
+}
+.sec4 ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sec4 ul li{
+    width: 10%;
+    height: auto;
+   
+}
+.sec4 ul li.skill_bg{
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 15px 10px;
+    box-sizing: border-box;
+}
+.sec4 ul li img{
+    width: 100%;
+    object-fit: contain;
+}
+/* section-5 */
+.sec5{
+    margin-top: 200px;
+    text-align: center;
+}
+.sec5 h2{
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 100px;
+    line-height: 2;
+}
+.sec5 .email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    border: 2px solid #5c5a547a;
+    padding: 50px 100px;
+    box-sizing: border-box;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 10px;
+    background: #fff;
+}
+.sec5 .email i{
+    padding-right: 20px;
+}
+.sec5 .myimg{
+    margin: 0 auto;
+    width: 30%;
+}
+.sec5 .myimg img{
+    width: 100%;
+}
+
+
+
+/* footer */
+footer{
+    width: 100%;
+    height: 10vh;
+    line-height: 10vh;
+    text-align: center;
+    color: #fff;
+    background-color: #E4CDC7CC;
+    margin-top: 100px;
+}

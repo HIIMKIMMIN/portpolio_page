@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>민이의 포트폴리오</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/m_style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+<body>
+    <div class="container" >
+        <header>
+            <a href="#top" class="logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="#aboutme">ABOUT ME</a></li>
+                    <li><a href="#portfolio">PROTPOLIO</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id='top'>
+            <div class="main_visual">
+                <div class="move_text">
+                    <p>MIN'S PORTFOLIO</p>
+                </div>
+            </div>
+            <div class="title_wrap inner">
+                <div class="line"></div>
+                <h2>안녕하세요!</h2>
+                <h3>저는 웹퍼블리셔로 첫걸음을 <br> 내딛고자하는 지원자 '김민' 입니다.</h3>
+                <figure></figure>
+                <p class="text">
+                    "웹 퍼블리싱에 대한 열정을 바탕으로 HTML, CSS, JavaScript를 학습하며 반응형 웹 디자인과 웹 접근성을 중점적으로 공부했습니다. 실무 경험은 부족하지만 빠르게 배우고 적응하는 능력이 있으며, 주어진 기회에서 팀에 실질적으로 기여할 자신이 있습니다. 열정과 책임감을 바탕으로 프로젝트에 필요한 역량을 발휘하며, 팀의 목표 달성에 힘을 보태고 싶습니다."
+                </p>
+            </div>
+        </section>
+        <section id="aboutme">
+            <div class="title_area">
+                <h2>About Me</h2>
+            </div>
+            <div class="aboutme inner" >
+                <div class="img_area">
+                    <img src="img/myImg.png" alt="">
+                </div>
+                <div class="text_area">
+                    <p class="name">김민 <span>Kim Min</span></p>
+                    <p class="text">
+                        다양한 디자인 및 개발 도구에 대한 기본기를 갖추고 있으며, 이를 활용하여 능력을 꾸준히 발전시키고 있습니다. <br><br> 포토샵과 일러스트레이터를 활용한 시각적 디자인 작업에 익숙하며, 피그마를 활용한 프로토타이핑과 UI/UX 디자인도 할 수 있습니다. <br><br> 또한, HTML과 CSS, jQuery, JavaScript를 사용해 웹사이트를 구현하며, 사용자 친화적인 인터페이스를 개발하기 위해 지속적으로 노력하고 있습니다.
+                    </p>
+                    <button class="btn_more">
+                        <a href="sub_aboutme.html">자기소개 더보기</a>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio">
+            <div class="publishing_portfolio">
+                <div class="title_area">
+                    <h2>Publishing Portfolio</h2>
+                    <p>퍼블리싱 포트폴리오</p>
+                </div>
+                <!-- <div class="slider">
+                    <div class="slide">
+                        <div class="info_area">
+                            <p class="p_title">Portfolio Name 1</p>
+                            <p class="p_date">6개월</p>
+                            <p class="p_period">2024.07.20 ~ 2025.08.20</p>
+                            <button class="btn_more">이 포트폴리오 더보기 <img src="img/ico_plus_w.png" alt=""></button>
+                        </div>
+                        <div class="img_area"></div>
+                    </div>
+                </div> -->
+                <div class="swiper publishing_list">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="info_area">
+                                <p class="p_title">젠틀몬스터-젠틀살롱</p>
+                                <p class="p_date"><span>소요 시간 : </span> 1주일</p>
+                                <p class="p_period"><span>제작 기간 : </span> 2024.07.01 ~ 2025.07.09</p>
+                                <p class="text">
+                                    사용 언어: Html, css <br>
+                                    기존 브랜드인 '젠틀몬스터'의 젠틀살롱 프로젝트를 바탕으로 제작한 페이지입니다.
+                                </p>
+                                <button class="btn_more" ><a href="https://hiimkimmin.github.io/jentlesalon/" target="_blank">사이트 방문하기</a></button>
+                            </div>
+                            <div class="img_area"><img src="img/publishing_portfolio_thumnail_jentlesalon.png" alt=""></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="info_area">
+                                <p class="p_title">일상적 미식</p>
+                                <p class="p_date"><span>소요 시간 : </span> 1주일</p>
+                                <p class="p_period"><span>제작 기간 : </span> 2024.07.11 ~ 2024.07.18</p>
+                                <p class="text">
+                                    사용 언어: Html, css, jQuery <br>
+                                    기존 브랜드인 '일상적 미식' 홈페이지를 리디자인한 것으로,
+                                    PC 버전과 모바일 버전을 모두 지원하는 반응형 웹 사이트 입니다.
+                                </p>
+                                <button class="btn_more" ><a href="https://hiimkimmin.github.io/responsive_web/" target="_blank">사이트 방문하기</a></button>
+                            </div>
+                            <div class="img_area"><img src="img/publishing_portfolio_thumnail_misik.png" alt=""></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="info_area">
+                                <p class="p_title">더리치먼드 평창</p>
+                                <p class="p_date"><span>소요 시간 : </span> 1주일 미만</p>
+                                <p class="p_period"><span>제작 기간 : </span> 2024.07.18 ~ 2024.07.18</p>
+                                <p class="text">
+                                    사용 언어: Html, css <br>
+                                    기존 사이트 '더 리치먼드-평창'을 클론 코딩하였습니다.
+                                </p>
+                                <button class="btn_more" ><a href="https://hiimkimmin.github.io/TheRichmond/" target="_blank">사이트 방문하기</a></button>
+                            </div>
+                            <div class="img_area"><img src="img/publishing_portfolio_thumnail_theRichmond.png" alt=""></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="info_area">
+                                <p class="p_title">Rbfy</p>
+                                <p class="p_date"><span>소요 시간 : </span> 1주일 미만</p>
+                                <p class="p_period"><span>제작 기간 : </span> 2024.07.15 ~ 2024.07.15</p>
+                                <p class="text">
+                                    사용 언어: Html, css, jQuery <br>
+                                    기존 사이트 'Rbfy'을 클론 코딩하였습니다.
+                                </p>
+                                <button class="btn_more" ><a href="https://hiimkimmin.github.io/rbfy/" target="_blank">사이트 방문하기</a></button>
+                            </div>
+                            <div class="img_area"><img src="img/publishing_portfolio_thumnail_rbfy.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="design_portfolio">
+                <div class="title_area">
+                    <h2>Desing Portfolio</h2>
+                    <p>디자인 포트폴리오</p>
+                </div>
+                <div class="swiper design_list">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div class="design_text">
+                                    <button>이 디자인 더보기</button>
+                                </div>
+                                <figure><img src="img/design_portfolio_thumbnail_numberzin_pc.png" alt=""></figure>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div class="design_text">
+                                    <button>이 디자인 더보기</button>
+                                </div>
+                                <figure><img src="img/design_portfolio_thumbnail_numberzin_mobile.png" alt=""></figure>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div class="design_text">
+                                    <button>이 디자인 더보기</button>
+                                </div>
+                                <figure><img src="img/design_portfolio_thumbnail_jentlesalon_pc.png" alt=""></figure>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div class="design_text">
+                                    <button>이 디자인 더보기</button>
+                                </div>
+                                <figure><img src="img/design_portfolio_thumbnail_amare_pc.png" alt=""></figure>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div class="design_text">
+                                    <button>이 디자인 더보기</button>
+                                </div>
+                                <figure><img src="img/design_portfolio_thumbnail_amare_mobile.png" alt=""></figure>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div class="design_text">
+                                    <button>이 디자인 더보기</button>
+                                </div>
+                                <figure><img src="img/design_portfolio_thumbnail_greenguide_pc.png" alt=""></figure>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div class="design_text">
+                                    <button>이 디자인 더보기</button>
+                                </div>
+                                <figure><img src="img/design_portfolio_thumbnail_greenguide_mobile.png" alt=""></figure>
+                            </a>
+                        </div>
+            
+                    </div>
+            </div>
+                <div class="swiper design_list2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div class="design_text">
+                                    <button>이 디자인 더보기</button>
+                                </div>
+                                <figure><img src="img/myImg.png" alt=""></figure>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div class="design_text">
+                                    <button>이 디자인 더보기</button>
+                                </div>
+                                <figure><img src="img/myImg.png" alt=""></figure>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div class="design_text">
+                                    <button>이 디자인 더보기</button>
+                                </div>
+                                <figure><img src="img/myImg.png" alt=""></figure>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div class="design_text">
+                                    <button>이 디자인 더보기</button>
+                                </div>
+                                <figure><img src="img/myImg.png" alt=""></figure>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div class="design_text">
+                                    <button>이 디자인 더보기</button>
+                                </div>
+                                <figure><img src="img/myImg.png" alt=""></figure>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div class="design_text">
+                                    <button>이 디자인 더보기</button>
+                                </div>
+                                <figure><img src="img/myImg.png" alt=""></figure>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div class="design_text">
+                                    <button>이 디자인 더보기</button>
+                                </div>
+                                <figure><img src="img/myImg.png" alt=""></figure>
+                            </a>
+                        </div>
+            
+                    </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="contact">
+                <div class="title_area">
+                    <h2>CONTACT</h2>
+                </div>
+                <div class="content_wrap">
+                    <div class="img_area"></div>
+                    <div class="text_area">
+                        <p class="contact_text">
+                            역량 있는 웹 퍼블리셔를 찾고 계신가요? <br>
+                            끊임없는 탐구와 학습으로 성장하는 신입 웹 퍼블리셔 김민입니다. <br>열정과 의지를 바탕으로 팀에 기여할 준비가 되어 있습니다. <br>
+                            언제든지 연락주세요!
+                        </p>
+                        <ul class="contact_me">
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                <span class="mail">minkim.designcode@gmail.com</span>
+                            </li>
+                            <li>
+                                <i class="fa-brands fa-instagram"></i>
+                                <span class="phone">miningmimi__</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>Designed and developed with ❤ by Kim Min © 2024 All rights reserved</p>
+        </footer>
+    </div>
+    <div class="design_modal">
+
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
