@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>민이의 포트폴리오</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
@@ -28,7 +32,9 @@
         <section id='top'>
             <div class="main_visual">
                 <div class="move_text">
-                    <p>MIN'S PORTFOLIO</p>
+                    <p class="first">PORTFOLIO</p>
+                    <p class="second">PORTFOLIO</p>
+                    <span>By. MIN</span>
                 </div>
             </div>
             <div class="title_wrap inner">
@@ -46,10 +52,10 @@
                 <h2>About Me</h2>
             </div>
             <div class="aboutme inner" >
-                <div class="img_area">
+                <div class="img_area animate__animated ">
                     <img src="img/myImg.png" alt="">
                 </div>
-                <div class="text_area">
+                <div class="text_area animate__animated">
                     <p class="name">김민 <span>Kim Min</span></p>
                     <p class="text">
                         다양한 디자인 및 개발 도구에 대한 기본기를 갖추고 있으며, 이를 활용하여 능력을 꾸준히 발전시키고 있습니다. <br><br> 포토샵과 일러스트레이터를 활용한 시각적 디자인 작업에 익숙하며, 피그마를 활용한 프로토타이핑과 UI/UX 디자인도 할 수 있습니다. <br><br> 또한, HTML과 CSS, jQuery, JavaScript를 사용해 웹사이트를 구현하며, 사용자 친화적인 인터페이스를 개발하기 위해 지속적으로 노력하고 있습니다.
@@ -66,31 +72,33 @@
                     <h2>Publishing Portfolio</h2>
                     <p>퍼블리싱 포트폴리오</p>
                 </div>
-                <!-- <div class="slider">
-                    <div class="slide">
-                        <div class="info_area">
-                            <p class="p_title">Portfolio Name 1</p>
-                            <p class="p_date">6개월</p>
-                            <p class="p_period">2024.07.20 ~ 2025.08.20</p>
-                            <button class="btn_more">이 포트폴리오 더보기 <img src="img/ico_plus_w.png" alt=""></button>
-                        </div>
-                        <div class="img_area"></div>
-                    </div>
-                </div> -->
                 <div class="swiper publishing_list">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="info_area">
+                                <p class="p_title">파리 여행자 모집 공고 디자인</p>
+                                <p class="p_date"><span>소요 시간 : </span> 1일 미만</p>
+                                <p class="p_period"><span>제작 기간 : </span> 2024.07.02 ~ 2025.07.02</p>
+                                <p class="text">
+                                    사용 언어: Html, css <br><br>
+                                    창작 디자인 입니다.
+                                </p>
+                                <button class="btn_more" ><a href="https://hiimkimmin.github.io/parisTravel/" target="_blank">사이트 방문하기</a></button>
+                            </div>
+                            <div class="img_area"><img src="img/publishing_portfolio_thumnail_parisTravle.png" alt=""></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="info_area">
                                 <p class="p_title">젠틀몬스터-젠틀살롱</p>
-                                <p class="p_date"><span>소요 시간 : </span> 1주일</p>
-                                <p class="p_period"><span>제작 기간 : </span> 2024.07.01 ~ 2025.07.09</p>
+                                <p class="p_date"><span>소요 시간 : </span> 1주일 미만</p>
+                                <p class="p_period"><span>제작 기간 : </span> 2024.07.01 ~ 2025.07.07</p>
                                 <p class="text">
                                     사용 언어: Html, css <br><br>
                                     기존 브랜드인 '젠틀몬스터'의 젠틀살롱 프로젝트를 바탕으로 제작한 페이지입니다.
                                 </p>
                                 <button class="btn_more" ><a href="https://hiimkimmin.github.io/jentlesalon/" target="_blank">사이트 방문하기</a></button>
                             </div>
-                            <div class="img_area"><img src="img/publishing_portfolio_thumnail_jentlesalon.png" alt=""></div>
+                            <div class="img_area"><img src="img/publishing_portfolio_thumnail_gentleMonster.png" alt=""></div>
                         </div>
                         <div class="swiper-slide">
                             <div class="info_area">
@@ -109,7 +117,7 @@
                         <div class="swiper-slide">
                             <div class="info_area">
                                 <p class="p_title">더리치먼드 평창</p>
-                                <p class="p_date"><span>소요 시간 : </span> 1주일 미만</p>
+                                <p class="p_date"><span>소요 시간 : </span> 1일 미만</p>
                                 <p class="p_period"><span>제작 기간 : </span> 2024.07.18 ~ 2024.07.18</p>
                                 <p class="text">
                                     사용 언어: Html, css <br><br>
@@ -161,7 +169,7 @@
                 <div class="swiper design_list">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <a href="">
+                            <a  class="open_modal" id="modal_1">
                                 <div class="design_text">
                                     <button>이 디자인 더보기</button>
                                 </div>
@@ -169,7 +177,7 @@
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="">
+                            <a  class="open_modal" id="modal_2">
                                 <div class="design_text">
                                     <button>이 디자인 더보기</button>
                                 </div>
@@ -177,7 +185,7 @@
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="">
+                            <a  class="open_modal" id="modal_3">
                                 <div class="design_text">
                                     <button>이 디자인 더보기</button>
                                 </div>
@@ -185,7 +193,7 @@
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="">
+                            <a  class="open_modal" id="modal_4">
                                 <div class="design_text">
                                     <button>이 디자인 더보기</button>
                                 </div>
@@ -193,7 +201,7 @@
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="">
+                            <a  class="open_modal" id="modal_5">
                                 <div class="design_text">
                                     <button>이 디자인 더보기</button>
                                 </div>
@@ -201,7 +209,7 @@
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="">
+                            <a  class="open_modal" id="modal_6">
                                 <div class="design_text">
                                     <button>이 디자인 더보기</button>
                                 </div>
@@ -209,7 +217,7 @@
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="">
+                            <a  class="open_modal" id="modal_7">
                                 <div class="design_text">
                                     <button>이 디자인 더보기</button>
                                 </div>
@@ -222,7 +230,7 @@
                 <div class="swiper design_list2">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <a href="">
+                            <a  class="open_modal" id="modal1">
                                 <div class="design_text">
                                     <button>이 디자인 더보기</button>
                                 </div>
@@ -230,7 +238,7 @@
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="">
+                            <a  class="open_modal" id="modal1">
                                 <div class="design_text">
                                     <button>이 디자인 더보기</button>
                                 </div>
@@ -238,7 +246,7 @@
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="">
+                            <a  class="open_modal" id="modal1">
                                 <div class="design_text">
                                     <button>이 디자인 더보기</button>
                                 </div>
@@ -246,7 +254,7 @@
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="">
+                            <a  class="open_modal" id="modal1">
                                 <div class="design_text">
                                     <button>이 디자인 더보기</button>
                                 </div>
@@ -254,7 +262,7 @@
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="">
+                            <a class="open_modal" id="modal1">
                                 <div class="design_text">
                                     <button>이 디자인 더보기</button>
                                 </div>
@@ -262,7 +270,7 @@
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="">
+                            <a  class="open_modal" id="modal1">
                                 <div class="design_text">
                                     <button>이 디자인 더보기</button>
                                 </div>
@@ -270,7 +278,7 @@
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="">
+                            <a  class="open_modal" id="modal1">
                                 <div class="design_text">
                                     <button>이 디자인 더보기</button>
                                 </div>
@@ -279,6 +287,7 @@
                         </div>
             
                     </div>
+                </div>
             </div>
         </section>
         <section id="contact">
@@ -312,12 +321,69 @@
             <p>Designed and developed with ❤ by Kim Min © 2024 All rights reserved</p>
         </footer>
     </div>
+    <!-- 모달 창 -->
     <div class="design_modal">
-
+        <div class="modal_1">
+            <div class="modal_contents">
+                <button class="close">&times;</button>
+                <h2 class="modal-title">넘버즈인</h2>
+                <p class="modal-body"></p>
+                <img src="img/design_portfolio_img_numberzin_pc&mobile.png">
+            </div>
+        </div>
+        <div class="modal_2">
+            <div class="modal_contents">
+                <button class="close">&times;</button>
+                <h2 class="modal-title">넘버즈인</h2>
+                <p class="modal-body"></p>
+                <img src="img/design_portfolio_img_numberzin_pc&mobile.png">
+            </div>
+        </div>
+        <div class="modal_3">
+            <div class="modal_contents">
+                <button class="close">&times;</button>
+                <h2 class="modal-title">넘버즈인</h2>
+                <p class="modal-body"></p>
+                <img src="img/design_portfolio_img_numberzin_pc&mobile.png">
+            </div>
+        </div>
+        <div class="modal_4">
+            <div class="modal_contents">
+                <button class="close">&times;</button>
+                <h2 class="modal-title">넘버즈인</h2>
+                <p class="modal-body"></p>
+                <img src="img/design_portfolio_img_numberzin_pc&mobile.png">
+            </div>
+        </div>
+        <div class="modal_5">
+            <div class="modal_contents">
+                <button class="close">&times;</button>
+                <h2 class="modal-title">넘버즈인</h2>
+                <p class="modal-body"></p>
+                <img src="img/design_portfolio_img_numberzin_pc&mobile.png">
+            </div>
+        </div>
+        <div class="modal_6">
+            <div class="modal_contents">
+                <button class="close">&times;</button>
+                <h2 class="modal-title">넘버즈인</h2>
+                <p class="modal-body"></p>
+                <img src="img/design_portfolio_img_numberzin_pc&mobile.png">
+            </div>
+        </div>
+        <div class="modal_7">
+            <div class="modal_contents">
+                <button class="close">&times;</button>
+                <h2 class="modal-title">넘버즈인</h2>
+                <p class="modal-body"></p>
+                <img src="img/design_portfolio_img_numberzin_pc&mobile.png">
+            </div>
+        </div>
+       
     </div>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    
+    <script src="js/data.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

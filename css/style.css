@@ -21,6 +21,7 @@ header{
     justify-content: space-between;
     align-items: center;
     animation: return-header 1s;
+    z-index: 100;
 }
 header .logo{
     opacity: 0.7;
@@ -61,7 +62,7 @@ header.fixed-header{
     height: 60px;
     position: fixed;
     width: 60%;
-    background-color: #92ADC3CC;
+    background-color: #92adc380;
     top: 30px; /* 수정: margin 대신 top 사용 */
     left: 50%; /* 추가: 화면 왼쪽에서 50% 이동 */
     transform: translateX(-50%); /* 추가: X축 방향으로 요소의 절반만큼 이동 */
@@ -100,12 +101,14 @@ header.fixed-header nav ul li a:hover{
 }
 /* main_visual */
 .main_visual{
-    background: #C9DFEF;
+    background: #D2DF8580 fixed;
     width: 100%;
     height: 100vh;
     border-radius: 0 0 100px 100px;
     margin: 0 auto;
     overflow: hidden;
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',  sans-serif;
 }
 .main_visual::after{
     content: '';
@@ -116,8 +119,62 @@ header.fixed-header nav ul li a:hover{
     background: url(../img/arrowDown_b.png) no-repeat center/cover;
     animation: updown-motion 1s linear infinite;
 }
-.main_visual p{display: none;}
+.main_visual .move_text p{
+    font-size:250px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+.main_visual .move_text span{
+    font-size:50px;
+    position: absolute;
+    top: 70%; left: 80%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+.first {
+    color: transparent;
+    -webkit-text-stroke: 2px #92adc3;
+}
 
+.second {
+    color: #92adc3;
+    -webkit-text-stroke: 2px #92adc3;
+    animation: waves 4s ease-in-out infinite;
+}
+
+  @keyframes waves {
+    0%,
+       100% {
+           clip-path: polygon(
+               0% 45%,
+               16% 44%,
+               33% 50%,
+               54% 60%,
+               70% 61%,
+               84% 59%,
+               100% 52%,
+               100% 100%,
+               0% 100%
+           );
+       }
+   
+       50% {
+           clip-path: polygon(
+               0% 60%,
+               15% 65%,
+               34% 66%,
+               51% 62%,
+               67% 50%,
+               84% 45%,
+               100% 46%,
+               100% 100%,
+               0% 100%
+           );
+       } 
+   }
 @keyframes updown-motion{
     0%{
         bottom: 60px;
@@ -151,7 +208,7 @@ header.fixed-header nav ul li a:hover{
     margin-bottom: 100px;
 }
 .title_wrap figure{
-    background: #bbbbbbcc;
+    background: url(../img/my_img004.jpg) center/cover;
     width: 100%;
     height: 500px;
     overflow: hidden;
@@ -180,6 +237,7 @@ section#aboutme{
     box-sizing: border-box;
     overflow: hidden;
 }
+.aboutme .img_area{}
 .aboutme .img_area img{
     object-fit: cover;
     width: 80%;
@@ -277,6 +335,7 @@ section#aboutme{
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 5px;
+    object-fit: cover;
 }
 .publishing_list .swiper-slide .info_area .p_title{
     font-size: 25px;
@@ -460,10 +519,11 @@ section#aboutme{
 }
 .contact .content_wrap div{
     width: 48.5%;
-    height: 500px;
+    height: 600px;
 }
 .contact .img_area{
-    background: #bbbbbbcc;
+    background: url(../img/my_img005.jpg) no-repeat bottom/cover;
+
 }
 .contact .text_area{
     padding: 100px 50px;
@@ -498,6 +558,63 @@ footer{
     height: 10vh;
     line-height: 10vh;
     text-align: center;
-    color: #fff;
-    background-color: #C9DFEF;
+    color: #92adc3;
+    background-color: #D2DF8580;
+    margin-top: 100px;
 }
+
+
+
+
+/* 모달창 기본 스타일 */
+
+.design_modal{
+
+}
+.design_modal .modal_contents{
+    position: fixed;
+    left: 0; top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+.design_modal > .modal_contents > div {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    /* animation: modalOpen 0.3s ease; */
+    z-index: 1200;
+  }
+  .design_modal > .modal_contents img{
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /* 모달 열리는 애니메이션 */
+@keyframes modalOpen {
+    from { opacity: 0; }
+    to { opacity: 1;  }
+}
+/* 닫기 버튼 스타일 */
+.design_modal .close {
+    cursor: pointer;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.design_modal .close:hover,
+.design_modal .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
