@@ -549,6 +549,9 @@ section.planning{padding-top: 120px;}
     padding-bottom: 200px;
     text-align: center;
 }
+.planning_wrap > div:last-child{
+    padding-bottom: 0;
+}
 .planning_wrap > div > .img_area{
     width: 55%;
     border-radius: 20px;
@@ -595,9 +598,6 @@ section.planning{padding-top: 120px;}
     font-weight: 600;
 }
 /* cotact */
-.contact {
-    padding: 200px 0;
-}
 .contact .content_wrap{
     display: flex;
     justify-content: space-between;
